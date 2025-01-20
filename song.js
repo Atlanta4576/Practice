@@ -1,36 +1,20 @@
-var sound = new Howl({
-    src: ['The_Fray_-_Look_After_You_Official_Lyric_Video.mp3'],
-    loop: true,
-    volume: 0.1
-});
-
-function playSound() {
-    sound.play();
-}
-
-// Play sound immediately on page load
-playSound();
-
-if(document.addEventListener){
-	document.addEventListener("DOMContentLoaded", function(){
-		loaded();
-	});
-} else if(document.attachEvent){
-	document.attachEvent("onreadystatechange", function(){
-		loaded();
-	});
-}
-
-function loaded(){
-	setInterval(loop, 350);
-}
-
-var x = 0;
-
-var titleText = [ "🖤 xan", "🖤 xa", "🖤 x", "🖤", "🖤 x", "🖤 xa", "🖤 xan"];
-
-function loop(){
-	document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
-}
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play sound with JavaScript  </title>
+</head>
+<body>
+   <button id="play">Play</button>
+   <script>
+        let play = document.getElementById("play");
+            function playMusic() {
+             let audio = new Audio("The_Fray_-_Look_After_You_Official_Lyric_Video.mp3");
+             audio.play()
+          }
+          play.addEventListener("click", playMusic);
+   </script>
+</body>
+</html>
