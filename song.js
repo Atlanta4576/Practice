@@ -25,3 +25,12 @@ function loaded(){
 	setInterval(loop, 350);
 }
 
+var x = 0;
+
+var titleText = [ "🖤 xan", "🖤 xa", "🖤 x", "🖤", "🖤 x", "🖤 xa", "🖤 xan"];
+
+function loop(){
+	document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+}
+
+
