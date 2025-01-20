@@ -58,7 +58,7 @@ body {
   font-size: 1.25rem;
   outline: none;
   border: none;
-  background-color: #f8fafc;
+  background-color: #662c39;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -66,7 +66,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #ffd1dc;
+  background-color: #662c39;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
