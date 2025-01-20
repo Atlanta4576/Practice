@@ -29,8 +29,8 @@ body {
   flex: 1;
   position: relative;
   isolation: isolate;
-  width: 500%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 2000px;
   margin-inline: auto;
 }
 
